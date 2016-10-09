@@ -1,0 +1,42 @@
+{
+  "name": "randombackend",
+  "version": "1.0.0",
+  "description": "A random backend for my projects",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --recursive ./test",
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edward8628/randomBackend.git"
+  },
+  "engines": {
+    "node": "6.2.1",
+    "npm": "3.9.5"
+  },
+  "keywords": [
+    "backend",
+    "node",
+    "express"
+  ],
+  "author": "Feng Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edward8628/randomBackend/issues"
+  },
+  "homepage": "https://github.com/edward8628/randomBackend#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
+    "pouchdb": "^6.0.6"
+  }
+}
