@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "local": "export DEBUG=randombackend* && npm start",
     "test": "mocha --recursive ./test",
     "start": "node ./src/index.js"
   },
