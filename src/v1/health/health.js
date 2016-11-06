@@ -1,5 +1,5 @@
 
-const debug = require('debug')('randombackend-health');
+const debug = require('debug')(`${process.env.APPNAME}:health`);
 
 const health = (req, res) => {
   debug("healthcheck request");
