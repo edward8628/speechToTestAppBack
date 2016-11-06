@@ -9,13 +9,23 @@ const routes = [
     action: 'get',
     endpoint: '/health',
     handler: handlers.health
+  },
+  {
+    action: 'get',
+    endpoint: '/users/:useremail',
+    handler: handlers.getUserById
+  },
+  {
+    action: 'post',
+    endpoint: '/users/createuser',
+    handler: handlers.createUser
   }
 ];
 
 const generator = (app) => {
   debug(`Generating $(version) routes`);
   routes.forEach((route) => {
-    routeGenerator(app, route)
+    routeGenerator(app, route, version)
   })
 }
 
