@@ -19,7 +19,13 @@ const routes = [
     action: 'post',
     endpoint: '/users/createuser',
     handler: handlers.createUser
+  },
+  {
+    action: 'get',
+    endpoint: '/speech',
+    handler: handlers.speechToText
   }
+  
 ];
 
 const generator = (app) => {
