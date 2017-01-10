@@ -1,6 +1,22 @@
 node_modules
 npm-debug.log
+coverage
+libraries/
+# Exclude compiled files
 build
-.DS_Store
+dist
+lib
+.project
+
+# Exclude IDE project folders
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_STORE
 .env
-*~
+
+# Logs
+logs
+*.log
